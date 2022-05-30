@@ -9,8 +9,10 @@
     "@mui/material": "^5.8.0",
     "@reduxjs/toolkit": "^1.8.1",
     "axios": "^0.27.2",
+    "chart.js": "^3.6.0",
     "react": "^18.0.0",
     "react-alice-carousel": "^2.6.1",
+    "react-chartjs-2": "4.0.0",
     "react-dom": "^18.0.0",
     "react-html-parser": "^2.0.2",
     "react-icons": "^4.3.1",
@@ -53,6 +55,7 @@
     ]
   },
   "devDependencies": {
+    "faker": "5.5.3",
     "react-error-overlay": "6.0.9"
   }
 }

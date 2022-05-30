@@ -30,6 +30,7 @@ const Banner = (props) => {
             sx={{
               fontWeight: "bold",
               fontFamily: "Montserrat",
+              fontSize:{xs:"2rem" , md:"3.75rem"}
             }}
           >
             Crypto Hunter

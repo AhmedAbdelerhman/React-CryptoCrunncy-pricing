@@ -26,8 +26,17 @@ const Slider = (props) => {
 
   useEffect(() => {
     const fetchTrendingCoins = async () => {
-      const { data } = await axios.get(TrendingCoins(currency));
-
+      const { data } = await axios.get(TrendingCoins("usd"));
+      let newData=[];
+          if(currency==="EGP")
+          {
+            newData= data.map(coin=>{
+              coin.current_price = coin.current_price*18.6
+              return  coin
+            })
+            setTrending(newData);
+          return
+          }
       console.log(data);
       setTrending(data);
     };
