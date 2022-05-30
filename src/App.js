@@ -3,7 +3,7 @@ import React from "react";
 import { Route } from "react-router-dom";
 import "./app.css";
 import Header from "./components/Header";
-import Coins from "./pages/Coins";
+import Coins from "./pages/PageCoins";
 import HomePage from "./pages/HomePage";
 function App() {
   const MyMainColor = styled("div")({
