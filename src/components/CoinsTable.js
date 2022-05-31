@@ -11,7 +11,9 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import { Container } from "@mui/system";
+import {GitHub , LinkedIn, Facebook} from '@mui/icons-material';
+
+import { Box, Container } from "@mui/system";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
@@ -103,7 +105,7 @@ const CoinsTable = (props) => {
           backgroundColor: "#fff",
           color: "black",
         }}
-        onChange={(e) => setSearch(e.target.value)}
+        onChange={(e) => setSearch(e.target.value.toLowerCase())}
       />
       <TableContainer component={Paper}>
         {isLoading ? (
@@ -199,10 +201,12 @@ const CoinsTable = (props) => {
       </TableContainer>
 
       {/* Comes from @material-ui/lab */}
+      <Box>
+
       <Pagination
         count={(handleSearch()?.length / 10).toFixed(0)}
         sx={{
-          padding: "5%",
+          padding: "5% 5% 3% 5%",
           margin:"",
           width: "100%",
           display: "flex",
@@ -213,7 +217,36 @@ const CoinsTable = (props) => {
           setPage(value);
           window.scroll(0, 450);
         }}
-      />
+        />
+        
+        <Box padding="2% 5%" backgroundColor="#fff"> 
+            <a style={{margin:"0 2%"}}
+        href="https://github.com/AhmedAbdelerhman/React-CryptoCrunncy-pricing"
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+        <GitHub/>
+      </a>
+
+      <a style={{margin:"0 2%"}}
+        href="https://www.linkedin.com/in/ahmed-abdalrahman-1075b3173/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <LinkedIn/>
+      </a>
+
+      <a  style={{margin:"0 2%"}}
+        href="https://www.facebook.com/profile.php?id=100009450207309"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Facebook/>
+      </a>
+      </Box>    
+
+
+        </Box>
     </Container>
   );
 };

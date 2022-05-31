@@ -37,7 +37,6 @@ const Slider = (props) => {
             setTrending(newData);
           return
           }
-      console.log(data);
       setTrending(data);
     };
     fetchTrendingCoins();
