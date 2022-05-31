@@ -5,10 +5,12 @@ import {
   Select,
   Toolbar,
   Typography,
+  
 } from "@mui/material";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { useHistory } from "react-router-dom";
 import { GetCryptoContext } from "../store/cryptoContext";
+
 
 const Header = (props) => {
   const title = {
@@ -39,6 +41,8 @@ const Header = (props) => {
             <Typography onClick={() => history.push("/")} sx={title}>
               crypto Hunter
             </Typography>
+
+         
             <Select
               variant="outlined"
               labelId="demo-simple-select-label"
@@ -47,6 +51,7 @@ const Header = (props) => {
               sx={{ width: 100, height: 40, marginLeft: 15, backgroundColor:"#fff"  }}
               onChange={(e) => setCurrency(e.target.value)}
             >
+
               <MenuItem  sx={{borderColor: '#fff'}} value={"USD"}>USD</MenuItem>
               <MenuItem value={"EGP"}>EGP</MenuItem>
             </Select>
