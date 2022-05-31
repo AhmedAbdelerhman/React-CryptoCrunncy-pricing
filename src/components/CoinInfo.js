@@ -53,14 +53,12 @@ const CoinInfo = ({ coin , CoinName }) => {
 
 
       setflag(true);
-      console.log(data);
       setHistoricData(data.prices);
     } catch (error) {
       setflag(true);
     }
   };
 
-  console.log(coin);
 
   useEffect(() => {
     fetchHistoricData();
