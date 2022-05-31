@@ -1,10 +1,10 @@
 # React-CryptoCrunncy-pricing
 
-##live demo https://react-cryptocurruncy.web.app/
+## live demo https://react-cryptocurruncy.web.app/
 
-###React cryptocurrency prices with USD and EGP currency 
-###charts history for each  cryptocurrency 
-###top trending cryptocurrency  to invest in
+### React cryptocurrency prices with USD and EGP currency 
+### charts history for each  cryptocurrency 
+### top trending cryptocurrency  to invest in
 
 
 
