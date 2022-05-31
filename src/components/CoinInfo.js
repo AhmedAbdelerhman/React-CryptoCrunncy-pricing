@@ -37,16 +37,6 @@ const CoinInfo = ({ coin , CoinName }) => {
   const { currency } = GetCryptoContext();
   const [flag, setflag] = useState(false);
 
-  const container = {
-    width: "75%",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    marginTop: 25,
-    padding: 40,
-  };
-
   const fetchHistoricData = async () => {
     try {
       const { data } = await axios.get(HistoricalChart(coin.id, days, "usd"));
