@@ -17,4 +17,5 @@ a {
 
   body{
     background-color: #14161a;
+    overflow-x: hidden;
   }

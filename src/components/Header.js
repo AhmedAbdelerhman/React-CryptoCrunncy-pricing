@@ -44,11 +44,11 @@ const Header = (props) => {
               labelId="demo-simple-select-label"
                id="demo-simple-select"
               value={currency}
-              sx={{ width: 100, height: 40, marginLeft: 15, color: "#fff"  }}
+              sx={{ width: 100, height: 40, marginLeft: 15, backgroundColor:"#fff"  }}
               onChange={(e) => setCurrency(e.target.value)}
             >
               <MenuItem  sx={{borderColor: '#fff'}} value={"USD"}>USD</MenuItem>
-              <MenuItem value={"INR"}>INR</MenuItem>
+              <MenuItem value={"EGP"}>EGP</MenuItem>
             </Select>
           </Toolbar>
         </Container>
